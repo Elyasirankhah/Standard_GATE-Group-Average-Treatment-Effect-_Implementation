@@ -33,9 +33,3 @@ Results are saved to `gate_results_all.csv` with:
 - Python 3.7+
 - numpy, pandas, scikit-learn, scipy, tqdm
 
-## Method
-
-Uses standard X-learner algorithm with propensity score weighting:
-- τ(x) = e(x) * τ₀(x) + (1 - e(x)) * τ₁(x)
-
-Stratifies patients by baseline risk quartiles to identify heterogeneous treatment effects.
